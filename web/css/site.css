@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Bold.ttf") format("truetype");
+    font-weight: 700; /* bold */
+    font-style: normal;
+}
+
+:root {
+    --violet-dark: #3e4195; /*Used for buttons*/
+    --violet-light-dark: #6567aa;
+    --violet-medium: #7e80b8; /*Used for buttons hover effect*/
+    --violet-normal: #e5e6ff; /*Used for mild dark bg color*/
+
+    --violet-medium-light: #e8e8ff; /*Used for search bard bg color*/
+    --violet-dark-light: #dcdcfb; /*Used for search bard bg color*/
+    --violet-light: #ececf4; /*Used for search bard bg color*/
+    --link-color: #2198f7; /*for links*/
+    --yellow-dark: #f1ab40; /*user for tag lines*/
+    --yellow-medium: #f6c77f; /*user for card tag lines*/
+    --yellow-normal: #fde3bc; /*user for popups*/
+    --yellow-light: #ffefd7; /*user for navbar*/
+    --font-main: "Manrope", sans-serif;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-nl: 24px;
+    --fs-lg: 32px;
+    --fs-xl: 40px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 12px;
+}
