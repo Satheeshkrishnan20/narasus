@@ -288,18 +288,18 @@
 }
 @media (max-width: 1200px) {
     .banner-buttons {
-        margin-top: 18%;
+        margin-top: 15%;
     }
 }
 @media (max-width: 850px) {
     .banner-buttons {
-        margin-top: 21%;
+        margin-top: 14%;
         margin-right: 10%;
     }
 }
 @media (max-width: 750px) {
     .banner-buttons {
-        margin-top: 25%;
+        margin-top: 14%;
         margin-right: 10%;
     }
     .banner-buttons a {
@@ -309,10 +309,14 @@
 }
 @media (max-width: 600px) {
     .banner-buttons {
-        margin-top: 30%;
+        margin-top: 14%;
         margin-right: 6%;
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 5px;
+    }
+    .banner-buttons a {
+        padding: 2px 5px;
+        font-size: 10px;
     }
 }
 /* .category-card {
@@ -432,39 +436,56 @@
     border-radius: 0px 0px 12px 12px;
 }
 
-.product-card{
+.product-card {
     position: relative;
 }
 
-.product-overlay{
+.product-overlay {
     position: absolute;
     /* top:27%; */
     bottom: 0;
     width: 100%;
 }
 
-.product-overlay{
+.product-overlay {
     background-color: white;
-   
+    border-radius: 16px;
 }
 
-.subscription-tab{
+.product-card .product-input{
+        border: none;
+        outline: none;
+        width: 45px;
+        text-align: center;
+}
+
+.product-card .product-quantity{
+    width: 30px;
+}
+
+.subscription-tab {
     background-color: var(--violet-light);
     border-radius: 10px;
-    
 }
 
-.subscription-tab .nav-link{
+.subscription-tab .nav-link {
     background-color: var(--violet-normal) !important;
     color: black !important;
-    
+    font-size: 12px;
 }
-.subscription-tab .nav-link.active{
+.subscription-tab .nav-link.active {
     background-color: var(--violet-dark) !important;
     color: white !important;
-    
+    /* border-radius: 10px 0px 0px 0px !important; */
 }
-.subscription-tab .nav-tabs{
+
+#home-tab {
+    border-radius: 10px 0px 0px 0px !important;
+}
+#profile-tab {
+    border-radius: 0px 10px 0px 0px !important;
+}
+.subscription-tab .nav-tabs {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -472,23 +493,38 @@
     width: 100% !important;
     margin: 0px !important;
 }
-.subscription-tab .nav{
+.subscription-tab .nav {
     padding: 0px !important;
     width: 100% !important;
     margin: 0px !important;
 }
 
-
-.subscription-tab li{
+.subscription-tab li {
     padding: 0px !important;
     width: 100% !important;
     /* margin: 0px !important; */
 }
 
+.product-decrement,
+.product-increment {
+    background-color: var(--violet-light);
+    padding: 2px 5px;
+    color: var(--violet-dark);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* width: 100%; */
+}
 
+.greater,
+.add {
+    border-radius: 0px 7px 7px 0px;
+}
 
-
-
+.lesser,
+.sub {
+    border-radius: 7px 0px 0px 7px;
+}
 
 /* card end */
 .app-download-banner {
@@ -516,4 +552,16 @@
 .partner h1 {
     color: var(--violet-dark);
     font-weight: 600;
+}
+
+@media (max-width: 550px) {
+    .app-download-banner-btn .btn {
+        padding: 2px 5px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .app-download-banner-btn .btn {
+        padding: 0px 0px !important;
+    }
 }

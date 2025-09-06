@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Review Slider</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <style>
     /* Slider review */
     .review-slider {
@@ -124,8 +119,7 @@
       }
     }
   </style>
-</head>
-<body>
+
 
 <div class="container">
   <div class="review-slider">
@@ -240,7 +234,5 @@ $(function () {
     updateSlider();
   });
 });
-</script>
 
-</body>
-</html>
+</script>
